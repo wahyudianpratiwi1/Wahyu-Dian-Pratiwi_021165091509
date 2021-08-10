@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AplikasiSederhana</string>
+    <string name="masukkan_angka_pertama">Masukkan Angka Pertama</string>
+    <string name="masukkan_dua_angka">Masukkan Dua Angka</string>
+</resources>

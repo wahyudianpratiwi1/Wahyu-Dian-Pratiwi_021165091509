@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KalkulatorActivity">
+
+    <Button
+        android:id="@+id/btn_bagi"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:onClick="actionBagi"
+        android:text="/"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_angka_2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:onClick="actionPlus"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/edt_angka_2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="actionMinus"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_kali"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="actionKali"
+        android:text="x"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bagi"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/masukkan_dua_angka"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_angka_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_angka_pertama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edt_angka_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_angka_1"
+        app:layout_constraintStart_toStartOf="@+id/edt_angka_1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_1" />
+
+    <Button
+        android:id="@+id/btn_bersihkan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="actionBersihkan"
+        android:text="BERSIHKAN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_minus" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="0.0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bersihkan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
